@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- OTIMIZAÇÃO PARA O GOOGLE (SEO) -->
+    <title>Joana - Pet Sitter Porto Alegre</title>
+    <meta name="description" content="Serviço profissional de pet sitter, cuidadora de pet e cuidadora de gato em Porto Alegre (Zona Norte e arredores). Passeios (dog walker) e visitas domiciliares.">
+    <meta name="keywords" content="pet sitter porto alegre, cuidadora de gato porto alegre, cuidadora de pet porto alegre, pet sit, passeador de cachorro, passeador, dog walker, creche pet, hotel pet, zona norte porto alegre, babá de pet">
+    
+    <!-- CÓDIGO ESPECIAL PARA O GOOGLE MAPS E PESQUISA LOCAL -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Joana - Pet Sitter e Dog Walker",
+  "telephone": "+5551983056290",
+  "description": "Serviço profissional de pet sitter, cuidadora de animais e passeios (dog walker) em Porto Alegre.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Porto Alegre",
+    "addressRegion": "RS",
+    "addressCountry": "BR"
+  },
+  "areaServed": ["São João", "Higienópolis", "Passo d'Areia", "Boa Vista", "Zona Norte Porto Alegre"]
+}
+</script>
+
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Nunito', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f3f6f3',
+                            100: '#e1e9df',
+                            200: '#c4d3bf',
+                            500: '#657e5e',
+                            600: '#4f6349',
+                            700: '#3b4b37',
+                        },
+                        accent: {
+                            50: '#fefce8',
+                            400: '#facc15',
+                            500: '#eab308',
+                        },
+                        cream: '#fbfaf5'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hover-card:hover {
+            transform: translateY(-8px);
+            transition: transform 0.3s ease;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #fafaf9; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+</head>
+<body class="bg-cream text-gray-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <header class="fixed w-full bg-cream/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300 border-b border-brand-100">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl md:text-2xl font-extrabold text-brand-700 flex items-center gap-2 tracking-tight">
+                <i class="fa-solid fa-paw text-brand-500 text-2xl"></i>
+                <span>Pet Sitter - Cuidadora de pet</span>
+            </a>
+            <nav class="hidden md:flex gap-6 lg:gap-8 font-semibold text-gray-600 items-center">
+                <a href="#inicio" class="hover:text-brand-600 transition">Início</a>
+                <a href="#servicos" class="hover:text-brand-600 transition">Serviços</a>
+                <a href="#sobre" class="hover:text-brand-600 transition">Sobre mim</a>
+                <a href="#contato" class="bg-brand-500 text-white px-6 py-2.5 rounded-full hover:bg-brand-600 transition shadow-sm font-bold">Falar no WhatsApp</a>
+            </nav>
+            <button class="md:hidden text-brand-700 text-3xl focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-brand-100 px-4 py-4 space-y-4 font-semibold text-gray-600 text-center shadow-xl absolute w-full z-40">
+            <a href="#inicio" class="block hover:text-brand-600 py-2" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Início</a>
+            <a href="#servicos" class="block hover:text-brand-600 py-2" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Serviços</a>
+            <a href="#sobre" class="block hover:text-brand-600 py-2" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Sobre mim</a>
+            <a href="#contato" class="block bg-brand-50 text-brand-700 py-3 rounded-xl mx-4 border border-brand-200" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Falar no WhatsApp</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="relative pt-32 pb-20 px-4 min-h-[85vh] flex items-center overflow-hidden bg-brand-50">
+        <div class="absolute top-0 right-0 w-full h-full overflow-hidden pointer-events-none z-0">
+            <div class="absolute -top-32 -right-32 w-[500px] h-[500px] bg-brand-100 rounded-full opacity-50 blur-3xl"></div>
+            <div class="absolute bottom-10 left-[-10%] w-[400px] h-[400px] bg-accent-50 rounded-full opacity-70 blur-3xl"></div>
+        </div>
+        <div class="max-w-6xl mx-auto flex flex-col items-center relative z-10 w-full text-center">
+            <div class="inline-flex items-center gap-2 bg-white px-5 py-2.5 rounded-full text-sm md:text-base font-bold text-brand-700 shadow-sm border border-brand-100 mb-8">
+                <i class="fa-solid fa-map-pin text-brand-500"></i>
+                Tv. Jaguarão - São João, Porto Alegre RS
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-900 leading-tight mb-6 max-w-4xl mx-auto">
+                O melhor cuidado, no conforto do seu lar 💚
+            </h1>
+            <p class="text-lg md:text-2xl text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10">
+                Compromissos tranquilos pra você, rotina sem estresse pra eles. Atendimento exclusivo em domicílio para todos os tipos de animais em Porto Alegre
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-md mx-auto sm:max-w-none">
+                <a href="#contato" class="bg-brand-500 hover:bg-brand-600 text-white font-bold py-4 px-10 rounded-full shadow-lg shadow-brand-500/20 transform transition hover:-translate-y-1 text-lg">
+                    Chamar no WhatsApp
+                </a>
+                <a href="#servicos" class="bg-white hover:bg-gray-50 text-brand-700 border-2 border-brand-100 font-bold py-4 px-10 rounded-full shadow-sm transition text-lg">
+                    Como funciona?
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 px-4 bg-cream relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 space-y-4">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Meus Serviços</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">O pet sitting é pensado como uma alternativa às creches e hotéis, mantendo seu pet no conforto de casa e evitando o estresse que eles sentem ao ter que mudar de ambiente ou precisar conviver com outros bichinhos. É um cuidado personalizado onde garanto que toda a atenção que seu pet merece e precisa será dada!</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl p-8 lg:p-10 hover-card border border-brand-100 shadow-sm relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-brand-500 group-hover:w-3 transition-all"></div>
+                    <div class="w-16 h-16 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-solid fa-house-user"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Visita Domiciliar (Pet Sitting)</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        <strong>O que está incluso na visita:</strong><br>
+                        ✅ Alimentação, troca de água e higienização dos potes.<br>
+                        ✅ Cuidados diários (remédios, alguma necessidade especial, etc).<br>
+                        ✅ Muito carinho, brincadeiras e atenção!<br>
+                        ✅ Limpeza do espaço do pet (caixinha de areia, tapetes higiênicos, terrário e qualquer sujeirinha ou "acidente" que ele fizer).
+                    </p>
+                    <p class="text-gray-600 leading-relaxed font-semibold text-brand-700">
+                        Atendo qualquer tipo de animal
+                    </p>
+                </div>
+                <div class="bg-white rounded-3xl p-8 lg:p-10 hover-card border border-accent-200 shadow-sm relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-accent-400 group-hover:w-3 transition-all"></div>
+                    <div class="w-16 h-16 bg-accent-50 text-accent-500 rounded-2xl flex items-center justify-center text-3xl mb-6">
+                        <i class="fa-solid fa-dog"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Passeio</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        Passeios seguros para gastar a energia do seu cão, respeitando seu ritmo, ajudando na redução do estresse e melhora na saúde física e bem-estar. Ideal para animais que tem dificuldade em fazer as necessidades dentro de casa, ou estão acostumados a essa rotina.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed font-semibold text-accent-600">
+                        A rota e tempo da caminhada podem ser ajustadas conforme desejar.
+                    </p>
+                </div>
+            </div>
+            <div class="mt-12 bg-white border-2 border-brand-200 p-6 rounded-2xl max-w-4xl mx-auto shadow-sm flex flex-col sm:flex-row items-center gap-6">
+                <div class="w-16 h-16 bg-brand-50 rounded-full flex-shrink-0 flex items-center justify-center text-brand-500 text-3xl">
+                    <i class="fa-regular fa-calendar-check"></i>
+                </div>
+                <div>
+                    <h4 class="font-bold text-gray-900 text-xl mb-1">Aviso sobre Disponibilidade</h4>
+                    <p class="text-gray-600">
+                         Foco principal na Zona Norte de Porto Alegre (São João, Higienópolis, Passo D'areia, Boa vista e arredores). A realização dos serviços depende da análise da distância e disponibilidade na região solicitada. Entre em contato para tirar dúvidas!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 px-4 bg-brand-50">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-16 items-start">
+            <div class="space-y-6">
+                <div class="inline-flex items-center gap-2 text-brand-600 font-bold uppercase tracking-wider text-sm mb-2 bg-brand-100 px-3 py-1 rounded-lg">
+                    <i class="fa-solid fa-user-astronaut"></i> Quem vai cuidar do seu pet?
+                </div>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+                    Prazer, sou a Joana!
+                </h2>
+                <div class="bg-white p-6 md:p-8 rounded-3xl border border-brand-100 shadow-sm space-y-4">
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Sou gaúcha, estudante de Farmácia, tenho 20 anos, participo de pesquisa acadêmica e sempre fui completamente apaixonada por animais. Já tive de tudo; coelho, cachorro, tartaruga, peixe, gato e até uma lagartixa... Hoje em dia a Flora, o Berlim e a Viena são meus fiéis companheiros. Sei o quanto é difícil encontrar alguém que passe a confiança em deixá-los sozinhos, e saber que está tudo bem. Foi por entender essa necessidade que comecei nesse ramo, meu maior objetivo é manter a paz de espírito dos tutores e do animalzinho, mantendo a rotina dele na sua ausência um pouquinho melhor, tendo sempre extremo respeito pela sua casa!
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        Não economizo em enviar fotos e vídeos do seu bichinho pra matar a saudade!
+                    </p>
+                </div>
+            </div>
+            <div class="space-y-6 lg:mt-12">
+                <h3 class="text-2xl font-bold text-gray-900 text-center lg:text-left">
+                    Eles
+                </h3>
+                
+                <!-- FOTOS SEM ZOOM (QUALIDADE ORIGINAL) -->
+                <!-- Usei items-start para que cada foto respeite seu próprio tamanho e não estique -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 items-start mt-4">
+    <img src="IMG_3084.PNG" alt="Gatos Berlim e Viena" class="w-full rounded-2xl shadow-md border-2 border-brand-100">
+    
+    <img src="IMG_3085.PNG" alt="Joana e Flora" class="w-full rounded-2xl shadow-md border-2 border-brand-100">
+</div>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- SECÇÃO DE CONTACTO APENAS COM BOTÕES -->
+    <section id="contato" class="py-24 px-4 bg-cream">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">Vamos conversar?</h2>
+            <p class="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+                Ficou com alguma dúvida ou quer pedir um orçamento para o seu pet? Chame-me no WhatsApp, será um prazer atender e entender as suas necessidades!
+            </p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <a href="https://wa.me/5551983056290?text=Olá!%20Vim%20pelo%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20de%20Pet%20Sitting!" target="_blank" class="flex items-center justify-center gap-4 px-8 py-5 w-full sm:w-auto bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-2xl shadow-lg transition transform hover:-translate-y-1">
+                    <i class="fa-brands fa-whatsapp text-4xl"></i>
+                    <div class="text-left">
+                        <p class="font-bold text-xl leading-none">Chamar no WhatsApp</p>
+                        <p class="text-green-100 text-sm mt-1">(51) 98305-6290</p>
+                    </div>
+                </a>
+
+                <a href="mailto:joanak.albino@gmail.com" class="flex items-center justify-center gap-4 px-8 py-5 w-full sm:w-auto bg-white hover:bg-gray-50 text-brand-700 border-2 border-brand-100 rounded-2xl shadow-sm transition transform hover:-translate-y-1">
+                    <i class="fa-regular fa-envelope text-3xl"></i>
+                    <div class="text-left">
+                        <p class="font-bold text-lg leading-none">Enviar E-mail</p>
+                        <p class="text-brand-500 text-sm mt-1">joanak.albino@gmail.com</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
